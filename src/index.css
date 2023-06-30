@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Courgette&family=Fira+Code&family=Noto+Sans+Thai:wght@500&display=swap');
 
 :root {
-  --bg: #000000;
+  /* --bg: #000000; */
   --clr-1: #00c2ff;
   --clr-2: #33ff8c;
   --clr-3: #ffc640;
@@ -16,7 +16,7 @@ body {
   min-height: 100vh;
   display: grid;
   /* place-items: center; */
-  background-color: var(--bg);
+  /* background-color: var(--bg); */
   color: #fff;
   font-family: "Fira Code",  Arial, sans-serif;
 }
