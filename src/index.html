@@ -7,33 +7,143 @@
     <link rel="stylesheet" href="index.css" />
     <title>Final Project</title>
   </head>
-  <body>
-    <header class="bg-slate-400">
+  <body class="bg-black text-white max-w-screen">
+    <header>
       <nav>
-        <ul id="menu" class="flex flex-row justify-end p-4">
-          <li class="px-4">Home</li>
-          <li class="px-4">About</li>
-          <li class="px-4">Skills</li>
-          <li class="px-4">Projects</li>
-          <li class="px-4">Contact</li>
+        <ul id="menu" class="flex flex-row justify-center p-6">
+          <li class="px-12 hover:text-violet-500">About</li>
+          <li class="px-12 hover:text-violet-500">Skills</li>
+          <li class="px-12 hover:text-violet-500">Projects</li>
+          <li class="px-12 hover:text-violet-500">Contact</li>
         </ul>
       </nav>
     </header>
-    <main>
-      <h1 class="text-3xl font-bold bg-slate-500">HI! I'm Cybercat</h1>
-    <section id="skills">
-      <h2 class="bg-slate-300 text-3xl font-bold"> Skills </h2>
-    </section>
+    <main id="contenido-principal">
+      <div>
+        <img src="imagenes/metalcybercat.png" alt="" />
+        <h1 class="text-2xl text-center pt-2 pb-6">FrontEnd Web Developer.</h1>
+      </div>
+      <section id="about" class="">
+        <h2 id="about-me" class="text-3xl font-bold text-center mt-16">
+          About me
+        </h2>
+        <p class="items-center text-justify w-[75vw] p-11">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure,
+          praesentium mollitia! Eligendi itaque autem exercitationem qui at
+          minus laudantium voluptatem, repudiandae quia modi necessitatibus
+          dignissimos vero animi sunt, natus porro.
+        </p>
+      </section>
+      <section id="skills" class="border-b border-t">
+        <h2 id="my-skills" class="text-3xl font-bold text-center mt-16">
+          Skills
+        </h2>
+        <div
+          id="grid"
+          class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-5 pb-12"
+        >
+          <div id="html">
+            <img
+              src="imagenes/html.png"
+              alt="logo html5"
+              class="max-h-40 min-h-fit p-6"
+            />
+          </div>
+          <div id="css">
+            <img
+              src="imagenes/css.png"
+              alt="logo css3"
+              class="max-h-40 min-h-fit p-6"
+            />
+          </div>
+          <div id="js">
+            <img
+              src="imagenes/js.png"
+              alt="logo js"
+              class="max-h-40 min-h-fit p-6"
+            />
+          </div>
+          <div id="tailwind">
+            <img
+              src="imagenes/tailwind.png"
+              alt="logo tailwind"
+              class="max-h-40 min-h-fit p-6"
+            />
+          </div>
+          <div id="linux">
+            <img
+              src="imagenes/linuxessential.png"
+              alt="logo linux"
+              class="max-h-40 min-h-fit p-6"
+            />
+          </div>
+        </div>
+      </section>
 
-    <section id="projects" class="bg-slate-400">
-      <h2 class=" text-3xl font-bold"> Projects </h2>
-    </section>
+      <section id="projects" class="">
+        <h2 id="my-projects" class="text-3xl font-bold text-center p-6">
+          Projects
+        </h2>
+        <div id="grid-projects" class="grid grid-cols-3 px-44">
+          <div class="">
+            <img src="imagenes/citas .png" alt="p-6" />
+          </div>
+          <div class="">
+            <img src="imagenes/crono.png " alt="p-6" />
+          </div>
+          <div class="">
+            <img src="imagenes/selectorrgb.png" alt="p-6" />
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer id="contact" class="bg-slate-300">
-      <h2 class="text-3xl font-bold"> Contact </h2>
-      <caption>Made with 💟 by Cybercat © 20223 </caption>
+      <h2 class="text-3xl text-center font-bold">Contact</h2>
+      <div id="contacto" class="flex flex-col">
+        <form action="http://127.0.0.1:5500/src/index.html" method="post">
+          <legend>Let's work together</legend>
+          <label for="name">name</label>
+          <input type="text" name="name" placeholder="Your name " />
+          <label for="mail">Your email</label>
+          <input type="email" name="mail" placeholder="Your email " />
+          <label for="message">Your message</label>
+          <input
+            type="text-area"
+            rows="25"
+            cols="50"
+            name="message"
+            placeholder="Your message"
+          />
+          <button type="submit">Send</button>
+        </form>
+      </div>
+      <div id="social" class="flex max-w-28">
+        <img
+          src="	https://eager-williams-af0d00.netlify.app/assets/icons/icons8-twitter-circled.gif"
+          alt="twitter"
+          class="max-h-8"
+        />
+        <img
+          src="https://eager-williams-af0d00.netlify.app/assets/icons/icons8-instagram.gif"
+          alt=""
+          class="max-h-8"
+        />
+        <img
+          src="https://eager-williams-af0d00.netlify.app/assets/icons/icons8-linkedin-circled.gif"
+          alt=""
+          class="max-h-8"
+        />
+        <img
+          src="https://eager-williams-af0d00.netlify.app/assets/icons/icons8-github.gif"
+          alt=""
+          class="max-h-8"
+        />
+      </div>
     </footer>
+    <caption class="h-2 text-xs">
+      Made with 💟 by Cybercat © 20223
+    </caption>
     <script src="index.js"></script>
   </body>
 </html>
