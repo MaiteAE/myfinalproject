@@ -5,12 +5,12 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link href="/dist/output.css" rel="stylesheet" />
-  <link rel="icon" href="imagenes/favicon.png">
+  <link rel="icon" href="imagenes/programming-vector-icon.png">
   <link rel="stylesheet" href="index.css" />
   <title>Final Project</title>
 </head>
 
-<body class="bg-slate-900 text-white max-w-screen">
+<body class="bg-slate-900 text-white max-w-screen min-w-0 m-5 select-none">
   <header id="menu-superior">
     <ul class=" flex justify-evenly  p-3">
       <li class="hover:bg-gradient-to-r from-sky-500 to-violet-500 hover:text-black md:py-2 md:px-6 rounded-md"><a
@@ -50,41 +50,52 @@
       dolor sit amet consectetur, adipisicing elit. Laudantium libero culpa eius quisquam? Ipsum vel eos corporis.
       Similique voluptas minus qui odio aliquid, error doloremque non alias? Iure, porro ducimus.</p>
   </section>
-  <section id="competencias" >
+  <section id="competencias">
     <h2 class="text-center text-2xl p-8">Competencias</h2>
-  <div id="grid" class="grid justify-evenly  gap-2 sm:grid-cols-1 sm:grid-cols-2 lg:grid-cols-5">
-    <img src="imagenes/linuxessential.png" alt="linux" class="lg:mx-11">
-    <img src="imagenes/html.png" alt="html" class="lg:mx-11">
-    <img src="imagenes/css.png" alt="css" class="lg:mx-12">
-    <img src="imagenes/tailwind.png" alt="tailwind" class="lg:mx-10" >
-    <img src="imagenes/JavaScript-logo.png" alt="js" class="lg:mx-10">
-    
-    
-    
-  </div>
+    <div id="grid" class="grid justify-evenly  gap-2 sm:grid-cols-1 sm:grid-cols-2 lg:grid-cols-5">
+      <img src="imagenes/linuxessential.png" alt="linux" class="lg:mx-11">
+      <img src="imagenes/html.png" alt="html" class="lg:mx-11">
+      <img src="imagenes/css.png" alt="css" class="lg:mx-12">
+      <img src="imagenes/tailwind.png" alt="tailwind" class="lg:mx-10">
+      <img src="imagenes/JavaScript-logo.png" alt="js" class="lg:mx-10">
+
+
+
+    </div>
   </section>
   <section id="proyectos" class="bg-slate-400">Proyectos</section>
-  <div id="contacto" >
-  <h2 class="text-center text-2xl p-8">Contacto</h2>
- <div class="grid grid-cols-2">
-  <form action="index.html" method="post" class=" flex flex-col p-8 lg:mx-20 max-w[50vw]">
-    <input type="text" name="nombre" placeholder="Nombre" class="mb-2">
-    <input type="email" name="mail" placeholder="Correo electrónico" class="mb-2">
-    <textarea name="mensaje" id="" cols="30" rows="10" placeholder="Tu mensaje aquí" class="mb-2"></textarea>
-   <input type="submit" value="Enviar" class=" bg-slate-900 border cursor-pointer"> 
-  </form>
-  <article class="flex">
-    <h2 class="text-center text-2xl -m-10 ml-10 p-8">Redes Sociales</h2>
- <img src="imagenes/4-41427_instagram-png-icon-instagram-logo-transparent.png" alt="instagram" class=" mt-20  max-h-10 ">
- <img src="imagenes/facebook-logo-png-image-2335-1403.png" alt="facebook" class=" mt-20 mx-6 max-h-10 ">
- <img src="imagenes/Github-Icon_icon-icons.com_52888.png" alt="Github" class=" mt-20 mx-6 max-h-10 ">
-  </article>
- </div>
+  <!-- /*Seccion formulacio de contacto*/ -->
+  <div id="contacto">
+    <h2 class="text-center text-2xl p-8">Contacto</h2>
+    <div class="flex justify-center ">
+      <form action="index.html" method="post" class=" flex flex-col justify-centerp-8 lg:mx-20 w-[30vw] max-w[50vw]">
+        <input type="text" name="nombre" placeholder="Nombre" class="mb-2">
+        <input type="email" name="mail" placeholder="Correo electrónico" class="mb-2">
+        <textarea name="mensaje" id="" cols="30" rows="10" placeholder="Tu mensaje aquí" class="mb-2"></textarea>
+        <input type="submit" value="Enviar" class=" bg-slate-900 border cursor-pointer">
+      </form>
+      </section>
+
+    </div>
+    <!-- /*Seccion redes sociales*/ -->
+    <footer>
+    <h2 class="text-center capitalize  mt-20 p-8 pb-2">Sígueme en mis redes sociales</h2>
+    <section class="flex justify-center ">
+      <a href="https://www.linkedin.com/in/maite-arbones-escauriaza-353623249/" target="_blank"><img
+          src="imagenes/linkeddn.png" alt="logo linkedin" class="w-6 inline-block mx-8"></a>
+      <a href="https://www.facebook.com/maitearbones" target="_blank"> <img
+          src="imagenes/facebook-logo-png-image-2335-1403.png" alt="logo facebook" class="w-6 inline-block mx-8"></a>
+      <a href="https://www.instagram.com/maiteae_ds/" target="_blank"> <img
+          src="imagenes/4-41427_instagram-png-icon-instagram-logo-transparent.png" alt="logo instagram"
+          class="w-6 inline-block mx-8"></a>
+      <a href="https://github.com/MaiteAE" target="_blank"><img src="imagenes/Github-Icon_icon-icons.com_52888.png"
+          alt="logo github" class="w-6 inline-block mx-8"></a>
   </div>
-  </footer>
-  <article class="text-xs p-2">
+
+  <article class="text-xs flex justify-center mt-10 p-2 m-6">
     Made with 💟 by Cybercat © 20223
   </article>
+</footer>
   <script src="index.js"></script>
 </body>
 

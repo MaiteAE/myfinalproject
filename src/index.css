@@ -14,10 +14,10 @@
 
 body {
   min-height: 100vh;
-  display: grid;
+  /* display: grid; */
   /* place-items: center; */
   /* background-color: var(--bg); */
-  color: #fff;
+  /* color: #fff; */
   font-family: "Fira Code",  Arial, sans-serif;
 }
 
