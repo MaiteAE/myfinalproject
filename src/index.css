@@ -38,22 +38,10 @@ html, body {
 .bars ul li a:hover {
 	text-decoration: none;
 	color:white;
-  background-color: rgb(91, 5, 112);
+  background: linear-gradient(to  right, rgb(51, 2, 97), rgb(190, 134, 243));
   box-shadow: 5px 5px 5px rgba(0,0,0,0.3)
 }
-div.title {
-	display: flex;
-	align-items: center;
-	padding-right: 4px;
-}
-div.title a {
-	text-decoration: none;
-	color: white;
-}
-div.title h2{
-	padding: 0;
-	margin: 0;
-}
+
 .bars-button {
 	width: 40px;
 	height: 40px;
@@ -102,9 +90,7 @@ div.title h2{
 	.bars ul li a {
 		color: white;
 		font-weight: 700;
-		text-decoration: underline;
+		
 	}
-	div.title h2 {
-		padding: 10.5px;
-	}
+
 }
