@@ -1,42 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link href="/dist/output.css" rel="stylesheet" />
-  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
   <link rel="icon" href="imagenes/programming-vector-icon.png">
   <link rel="stylesheet" href="index.css" />
   <title>Final Project</title>
 </head>
 
 <body class="bg-slate-900 text-white max-w-screen min-w-0 m-5 select-none">
-  <header>
-    <i class="fa fa-bars bars-button" aria-hidden="true" id="bars-button"></i>
-    <div class="navbar">
-      <div class="contenido">
-        <nav class="bars">
-          <ul>
-            <li><a href="#">Sobre Mí</a></li>
-            <li><a href="#">Competencias</a></li>
-            <li><a href="#">Proyectos</a></li>
-            <li><a href="#">Contacto</a></li>
-          </ul>
-        </nav>
-
-        <div class="title">
-          <a href="#">
-
-          </a>
+  <header id="menu-superior">
+    <ul class=" flex justify-evenly  p-3">
+      <li
+        class=" hover:bg-gradient-to-r from-sky-500 to-violet-500 hover:text-black  mobile:text-xs mobile:px-1 tablet:text-base  md:py-2 md:px-6 rounded-md">
+        <a href="#sobre-mi">Sobre mí</a>
+      </li>
+      <li
+        class="hover:bg-gradient-to-r  from-sky-500 to-violet-500 hover:text-black mobile:text-xs mobile:px-1 tablet:text-base md:py-2 md:px-6   rounded-md">
+        <a href="#competencias">Competencias</a< /li>
+      <li
+        class="hover:bg-gradient-to-r  from-sky-500 to-violet-500 hover:text-black mobile:text-xs mobile:px-1 tablet:text-base md:py-2 md:px-6   rounded-md">
+        <a href="#proyectos">Proyectos</a< /li>
+      <li
+        class="hover:bg-gradient-to-r  from-sky-500 to-violet-500 hover:text-black mobile:text-xs mobile:px-1 tablet:text-base md:py-2 md:px-6   rounded-md">
+        <a href="#contacto">Contacto</a>
+      </li>
+    </ul>
+  </header>
+  <section id="presentacion" class="p-10">
+    <div class="content">
+      <div class="title">Hola, soy MaiteAE
+        <div class="aurora">
+          <div class="aurora__item"></div>
+          <div class="aurora__item"></div>
+          <div class="aurora__item"></div>
+          <div class="aurora__item"></div>
         </div>
       </div>
     </div>
-
-  </header>
-  <section id="presentacion" class="p-10">
-    <img src="imagenes/metalcybercat.png" alt="">
-
     <!-- <img src="imagenes/metalcybercat.png" alt="cybercat"> -->
     <h1 class="text-center sm:text-2xl md:text-3xl pb-12"> Técnico Informático y Front End Web Developer </h1>
   </section>
@@ -76,24 +78,23 @@
   <section id="proyectos" class="flex flex-col justify-items-center align-baseline mt-20 ">
     <h2 class="text-center text-2xl  p-8">Proyectos</h2>
     <div class="flex   mb-8 mobile:flex-col mobile:justify-around tablet:flex-row ">
-      <a href="imagenes/cronometro/index.html" class="p-8 "> <img src="imagenes/crono.png" alt="aplicacion cronometro"
-          class="shadow-lg shadow-black rounded-lg hover:shadow-inner "></a>
+      <a href="imagenes/cronometro/index.html" class="p-8"> <img src="imagenes/crono.png"
+          alt="aplicacion cronometro"></a>
       <a href="imagenes/citas-aleatorias/index.html" class="p-8"><img src="imagenes/citas .png"
-          alt="aplicacion citas motivadoras" class="shadow-lg shadow-black rounded-md hover:shadow-inner "></a>
+          alt="aplicacion citas motivadoras"></a>
       <a href="imagenes/color-aleatorio-rgb/index.html" class="p-8"><img src="imagenes/selectorrgb.png" alt="crono"
-          class="shadow-lg shadow-black rounded-lg hover:shadow-inner "></a>
-      <a href="imagenes/Lista de tareas/index.html" class="p-8"><img src="imagenes/todo-lista.png"
-          alt="app lista tareas" class="shadow-lg shadow-black rounded-lg hover:shadow-inner "></a>
+          class="proyectos"></a>
+      <a href="imagenes/Lista de tareas/index.html" class="p-8"><img src="imagenes/todo-lista.png" alt=""></a>
     </div>
   </section>
   <!-- /*Seccion formulacio de contacto*/ -->
   <div id="contacto">
     <h2 class="text-center text-2xl p-8">Contacto</h2>
     <div class="flex justify-center ">
-      <form id="contact-form" action="index.html" method="post" class=" flex flex-col justify-center p-8 sm:w-[300px] w-[700px]">
-        <input type="text" name="nombre" placeholder="Nombre" class="mb-2 text-black">
-        <input type="email" name="mail" placeholder="Correo electrónico" class="mb-2 text-black">
-        <textarea name="mensaje" id="" cols="30" rows="10" placeholder="Tu mensaje aquí" class="mb-2 text-black"></textarea>
+      <form action="index.html" method="post" class=" flex flex-col justify-center p-8 sm:w-[300px] w-[700px]">
+        <input type="text" name="nombre" placeholder="Nombre" class="mb-2">
+        <input type="email" name="mail" placeholder="Correo electrónico" class="mb-2">
+        <textarea name="mensaje" id="" cols="30" rows="10" placeholder="Tu mensaje aquí" class="mb-2"></textarea>
         <input type="submit" value="Enviar" class=" bg-slate-900 border cursor-pointer">
       </form>
       </section>
@@ -120,28 +121,6 @@
       Made with 💟 by Cybercat © 20223
     </article>
   </footer>
-  <script>
-    const limit_size_screen = window.matchMedia('screen and (max-width: 768px)');
-    const bars = document.querySelector('.bars');
-    const barsButton = document.querySelector('#bars-button');
-
-    function validation(event) {
-      if (event.matches) {
-        barsButton.addEventListener('click', hideShow);
-      } else {
-        barsButton.removeEventListener('click', hideShow);
-      }
-    }
-    validation(limit_size_screen);
-
-    function hideShow() {
-      if (bars.classList.contains('is-active')) {
-        bars.classList.remove('is-active');
-      } else {
-        bars.classList.add('is-active');
-      }
-    }
-  </script>
   <script src="index.js"></script>
 </body>
 
