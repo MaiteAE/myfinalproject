@@ -627,6 +627,10 @@ video {
   justify-content: center;
 }
 
+.justify-around {
+  justify-content: space-around;
+}
+
 .justify-evenly {
   justify-content: space-evenly;
 }
@@ -702,6 +706,36 @@ video {
   line-height: 1rem;
 }
 
+.text-8xl {
+  font-size: 6rem;
+  line-height: 1;
+}
+
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
+.text-5xl {
+  font-size: 3rem;
+  line-height: 1;
+}
+
 .capitalize {
   text-transform: capitalize;
 }
@@ -765,11 +799,21 @@ video {
     font-size: 3.75rem;
     line-height: 1;
   }
+
+  .mobile\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
 }
 
 @media (min-width: 640px) {
   .tablet\:flex-row {
     flex-direction: row;
+  }
+
+  .tablet\:text-5xl {
+    font-size: 3rem;
+    line-height: 1;
   }
 }
 
@@ -788,6 +832,26 @@ video {
   }
 
   .laptop\:text-8xl {
+    font-size: 6rem;
+    line-height: 1;
+  }
+}
+
+@media (min-width: 640px) {
+  @media (min-width: 1280px) {
+    .tablet\:desktop\:text-8xl {
+      font-size: 6rem;
+      line-height: 1;
+    }
+  }
+}
+
+@media (min-width: 1280px) {
+  .desktop\:text-center {
+    text-align: center;
+  }
+
+  .desktop\:text-8xl {
     font-size: 6rem;
     line-height: 1;
   }

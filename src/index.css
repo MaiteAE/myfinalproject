@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
+/*Barra de desplazamiento*/
 body::-webkit-scrollbar {
 	width: 7px;
 }
@@ -17,17 +18,21 @@ body::-webkit-scrollbar-thumb {
 	/* roundness of the scroll thumb */
 	border: 1px solid rgb(190, 134, 243);
 }
-h1{text-shadow: 2px 2px rgba(0, 0, 0, 0.384);}
-    
+
+/* titulo efecto d3 */
+h1 {
+	text-shadow: 2px 2px rgba(0, 0, 0, 0.384);
+}
+
 #gradiente {
 	font-family: 'Press Start 2P', cursive;
-    line-height: 150px;
+	line-height: auto;
 	background-image: linear-gradient(to right, #330261, #f0a5f7);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
-	
-}
 
+}
+/*menu hamburguesa*/
 html,
 body {
 	margin: 0;
@@ -35,7 +40,7 @@ body {
 	width: 100%;
 	padding: 5px;
 	box-sizing: border-box;
-	font-family: 'Fira Code',;
+	font-family: 'Fira Code', ;
 	color: white;
 }
 

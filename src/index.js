@@ -18,8 +18,10 @@ function hideShow() {
 limit_size_screen.addEventListener('change', validation);
 validation(limit_size_screen);
 
+
 // formulario de contacto
 const form= document.getElementById("contact-form");
+
 form.addEventListener("submit", function (event) {
   event.preventDefault(); // Evita que el formulario se envíe de forma predeterminada
   var nombre = document.getElementsByName("nombre")[0].value;
