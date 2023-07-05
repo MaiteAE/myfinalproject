@@ -74,7 +74,7 @@ body {
 .bars ul li a:hover {
 	text-decoration: none;
 	color: white;
-	background: linear-gradient(to right, rgb(51, 2, 97), #bf86f3);
+	background: linear-gradient(to bottom, rgb(51, 2, 97), #bf86f3);
 	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3)
 }
 

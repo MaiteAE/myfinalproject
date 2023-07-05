@@ -776,6 +776,21 @@ video {
   --tw-shadow: var(--tw-shadow-colored);
 }
 
+.shadow-slate-900 {
+  --tw-shadow-color: #0f172a;
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
+.shadow-slate-600 {
+  --tw-shadow-color: #475569;
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
+.shadow-slate-800 {
+  --tw-shadow-color: #1e293b;
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
 .hover\:mt-2:hover {
   margin-top: 0.5rem;
 }
